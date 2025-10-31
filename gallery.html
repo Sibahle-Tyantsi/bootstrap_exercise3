@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content="width-device-width, initial-scale = 1.0">
+        <title>My Tech Blog</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Photo Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>My Photo Gallery</h1>
+  </header>
+
+  <section class="filter-section">
+    <button class="filter-btn active" data-category="all">All</button>
+    <button class="filter-btn" data-category="landscape">Landscapes</button>
+    <button class="filter-btn" data-category="portrait">Portraits</button>
+    <button class="filter-btn" data-category="architecture">Architecture</button>
+  </section>
+
+  <main class="gallery-container">
+    <div class="card" data-category="landscape">
+      <img src="https://picsum.photos/id/1018/400/300" alt="Landscape 1" />
+      <div class="overlay">
+        <h3>Mountain Sunrise</h3>
+        <span class="tag">Landscape</span>
+        <p>Peaceful sunrise over the mountains.</p>
+      </div>
+    </div>
+
+    <div class="card" data-category="landscape">
+      <img src="https://picsum.photos/id/1021/400/300" alt="Landscape 2" />
+      <div class="overlay">
+        <h3>Forest Trail</h3>
+        <span class="tag">Landscape</span>
+        <p>A winding path through lush greenery.</p>
+      </div>
+    </div>
+
+    <div class="card" data-category="portrait">
+      <img src="https://picsum.photos/id/1005/400/300" alt="Portrait 1" />
+      <div class="overlay">
+        <h3>Smiling Woman</h3>
+        <span class="tag">Portrait</span>
+        <p>A candid portrait of happiness.</p>
+      </div>
+    </div>
+
+    <div class="card" data-category="portrait">
+      <img src="https://picsum.photos/id/1011/400/300" alt="Portrait 2" />
+      <div class="overlay">
+        <h3>Artist at Work</h3>
+        <span class="tag">Portrait</span>
+        <p>Capturing the moment of inspiration.</p>
+      </div>
+    </div>
+
+    <div class="card" data-category="architecture">
+      <img src="https://picsum.photos/id/1016/400/300" alt="Architecture 1" />
+      <div class="overlay">
+        <h3>Modern Bridge</h3>
+        <span class="tag">Architecture</span>
+        <p>An elegant design crossing the river.</p>
+      </div>
+    </div>
+
+    <div class="card" data-category="architecture">
+      <img src="https://picsum.photos/id/1020/400/300" alt="Architecture 2" />
+      <div class="overlay">
+        <h3>Historic Cathedral</h3>
+        <span class="tag">Architecture</span>
+        <p>Stunning gothic details and tall spires.</p>
+      </div>
+    </div>
+
+    <!-- Add 6 more random images -->
+    <div class="card" data-category="landscape">
+      <img src="https://picsum.photos/id/1036/400/300" alt="Landscape 3" />
+      <div class="overlay">
+        <h3>Calm Lake</h3>
+        <span class="tag">Landscape</span>
+        <p>Still waters reflecting the sky.</p>
+      </div>
+    </div>
+
+    <div class="card" data-category="portrait">
+      <img src="https://picsum.photos/id/1002/400/300" alt="Portrait 3" />
+      <div class="overlay">
+        <h3>Gentle Smile</h3>
+        <span class="tag">Portrait</span>
+        <p>A timeless black and white portrait.</p>
+      </div>
+    </div>
+
+    <div class="card" data-category="architecture">
+      <img src="https://picsum.photos/id/1040/400/300" alt="Architecture 3" />
+      <div class="overlay">
+        <h3>City Skyline</h3>
+        <span class="tag">Architecture</span>
+        <p>Modern cityscape with bright lights.</p>
+      </div>
+    </div>
+
+    <div class="card" data-category="landscape">
+      <img src="https://picsum.photos/id/1025/400/300" alt="Landscape 4" />
+      <div class="overlay">
+        <h3>Golden Desert</h3>
+        <span class="tag">Landscape</span>
+        <p>Endless dunes under the hot sun.</p>
+      </div>
+    </div>
+
+    <div class="card" data-category="portrait">
+      <img src="https://picsum.photos/id/1027/400/300" alt="Portrait 4" />
+      <div class="overlay">
+        <h3>Laughing Child</h3>
+        <span class="tag">Portrait</span>
+        <p>Pure joy captured in a smile.</p>
+      </div>
+    </div>
+
+    <div class="card" data-category="architecture">
+      <img src="https://picsum.photos/id/1043/400/300" alt="Architecture 4" />
+      <div class="overlay">
+        <h3>Glass Building</h3>
+        <span class="tag">Architecture</span>
+        <p>Reflective surfaces and symmetry.</p>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    // Filter functionality
+    const buttons = document.querySelectorAll(".filter-btn");
+    const cards = document.querySelectorAll(".card");
+
+    buttons.forEach(button => {
+      button.addEventListener("click", () => {
+        const category = button.dataset.category;
+
+        buttons.forEach(btn => btn.classList.remove("active"));
+        button.classList.add("active");
+
+        cards.forEach(card => {
+          if (category === "all" || card.dataset.category === category) {
+            card.style.display = "block";
+          } else {
+            card.style.display = "none";
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
+ 
+        </body>

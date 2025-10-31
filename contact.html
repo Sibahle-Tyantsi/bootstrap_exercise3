@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Contact Us</h1>
+
+  </header>
+
+  <section class="contact-form">
+    <h2>Send Us a Message</h2>
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Your email address" required>
+
+      <label for="phone">Phone</label>
+      <input type="number" id="phone" name="phone" placeholder="Your phone number" required>
+
+      <label for="subject">Subject</label>
+      <select id="subject" name="subject" required>
+        <option value="">Select a subject</option>
+        <option value="order">Order Inquiry</option>
+        <option value="returns">Returns & Exchanges</option>
+        <option value="collab">Collaboration</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <section class="schedule">
+    <h2>Hours</h2>
+    <table border="1" width="76%" cellpadding="10" cellspacing="0">
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Time</th>
+          <th>Representative</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monday</td>
+          <td>09:00 AM - 11:00 AM</td>
+          <td>Sibahle Tyantsi</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td>11:00 AM - 01:00 PM</td>
+          <td>Chandre Lee</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>02:00 PM - 04:00 PM</td>
+          <td>Mandy Williams</td>
+        </tr>
+        <tr>
+          <td>Thursday</td>
+          <td>09:00 AM - 12:00 PM</td>
+          <td>Siya Mazokwana</td>
+        </tr>
+        <tr>
+          <td>Friday</td>
+          <td>10:00 AM - 01:00 PM</td>
+          <td>Kylie Ted</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</body>
+</html>
